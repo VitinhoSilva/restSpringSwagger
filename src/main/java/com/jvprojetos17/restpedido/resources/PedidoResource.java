@@ -58,7 +58,7 @@ public class PedidoResource {
 	
 	
 	@DeleteMapping("/pedido/{id}")
-	@ApiOperation(value="eleta um pedido pelo id")
+	@ApiOperation(value="Deleta um pedido pelo id")
 	public Map<String, Boolean> deletaPedido(@PathVariable(value="id") Long id)
 			throws RelationNotFoundException {
 		Pedido pedido = produtoRepository.findById(id)
